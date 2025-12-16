@@ -1,0 +1,91 @@
+/* General body styling for elegant background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+}
+
+/* Container div with flexbox for centering and elegant design */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #1e3c72, #2a5298);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Counter display styling */
+#counter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.2s ease;
+}
+
+#counter:hover {
+    transform: scale(1.05);
+}
+
+/* Button styling with gradients and transitions */
+#incr-btn, #decr-btn, #save-btn {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#incr-btn:hover, #decr-btn:hover, #save-btn:hover {
+    background: linear-gradient(45deg, #764ba2, #667eea);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific styling for save button if needed */
+#save-btn {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+}
+
+#save-btn:hover {
+    background: linear-gradient(45deg, #f5576c, #f093fb);
+}
+
+/* Styling for the previous entries paragraph */
+#show-el {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
+}
